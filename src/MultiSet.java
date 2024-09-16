@@ -10,15 +10,34 @@ public abstract class MultiSet {
      */
     abstract void add(Integer item);
 
+    /**
+     * Remove the given item to this multiset.
+     *
+     * @param item the item to remove
+     */
     abstract void remove(Integer item);
 
+    /**
+     * Figure out whether the item is contained in the multiset.
+     *
+     * @param item the item to check if contained in the multiset.
+     */
     abstract boolean contains(Integer item);
 
+    /**
+     * Figure out whether the multiset is empty
+     */
     abstract boolean is_empty();
 
-    abstract int count();
+    /**
+     * Figure out the number of times an item appears in the multiset.
+     */
+    abstract int count(Integer item);
 
-    abstract int size(Integer item);
+    /**
+     * Figure out the length/size of the multiset
+     */
+    abstract int size();
 
     // TODO finish adding abstract methods to fully describe what it means to be a MultiSet.
 }
